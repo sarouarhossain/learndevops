@@ -1,0 +1,14 @@
+docker ps -> to see all process running 
+ps aux -> to see all process running inside pc
+
+# create a mysql db
+docker container run -d -p 3306:3306 --name mydb -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+
+=> a root password will be created randomly: eil7Uchee5moch2JeWooghaish2eeyu3/iet2baagai2sae9It7quei2Peu8voreF
+
+# to see the docker images
+docker image ls
+
+# to see the details about container config
+docker container inspect
+docker container stats

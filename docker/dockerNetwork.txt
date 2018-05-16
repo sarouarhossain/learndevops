@@ -1,0 +1,21 @@
+# show networks 
+docker network ls
+
+# inspect a network
+docker network inspect "netwrok name"
+
+# create a netwrok
+docker network create --driver
+
+# attach a network to container 
+docker network connect
+
+# detach a network from container 
+docker network disconnect
+
+# run a container on self defined network
+docker container run -d --name new_nginx --network my_app_net nginx
+
+# to connect/disconnect an existing container to a new network created by us
+docker network connect "network id" "container id"
+docker network disconnect "network id" "container id"

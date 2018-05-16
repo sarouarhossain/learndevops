@@ -1,0 +1,33 @@
+docker version -- to get info about corrent docker
+docker info -- to get more detail info
+docker run/ docker container run -- both are same
+
+# ngnix server run
+docker container run --publish 80:80 nginx
+
+# run container on background
+docker container run --publish 80:80 --detach nginx
+
+# run container on the background with a name set by us
+docker container run --publish port:80 --detach --name "name" nginx
+
+# to see the logs of a particular conatiner
+docker container logs "container name"
+
+# to see processes inside container
+docker container to "container name"
+
+# to see the list of containers
+docker conatiner ls
+
+# to stop the docker container
+docker conatienr stop "first some digits of docker conatiner id"
+
+# to see all containers we have created ever
+docker conatiner ls -a
+
+# to remove a docker container
+docker container rm "id" "id"
+
+# to remove forcefully
+docker container rm -f "id"

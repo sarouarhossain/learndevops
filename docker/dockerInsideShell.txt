@@ -1,0 +1,27 @@
+# to run bash inside docker container
+docker container run -it --name proxy nginx bash
+ls -al => list of all files
+exit => to get out of the shell
+
+*simply 
+docker container run -it "image name" bash
+
+** if bash is not in the image
+docker container run -it "container name" sh  //sh is smaller, has less feature then bash
+
+# start a image after exit, and run bash again 
+docker container start -ai "name of the stoped container"
+
+# to run inside an existing container
+docker container exec -it "container name" bash
+
+# to pull a image from docker hub
+docker pull "image name"
+
+# to see the port in which container is set
+docker container port "container name"
+
+# to see the IP address of a container 
+docker container inspect --format '{{ .NetworkSettings.IPAddress }}' "container name"
+
+
