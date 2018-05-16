@@ -1,0 +1,14 @@
+# pull a image
+docker pull "image name"
+
+# push a image
+docker push "image name"
+
+# change the tag of an image
+docker image tag "current-tag" "target-tag"
+
+# login/logout
+docker login
+docker logout
+cat .docker/config.json ==> to see the configuration 
+

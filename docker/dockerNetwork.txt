@@ -7,6 +7,9 @@ docker network inspect "netwrok name"
 # create a netwrok
 docker network create --driver
 
+* simply 
+docker network create "name of the network"
+
 # attach a network to container 
 docker network connect
 
@@ -19,3 +22,12 @@ docker container run -d --name new_nginx --network my_app_net nginx
 # to connect/disconnect an existing container to a new network created by us
 docker network connect "network id" "container id"
 docker network disconnect "network id" "container id"
+
+# create a container in a network with a alias
+docker container run -d --net "name of the network" --net-alias "alias name" "container-name"
+
+# to search dns loookup by alias name in a network 
+docker container run --rm --net "network-name" alpine nslookup "alias -name"
+
+# netwrok port e ki ase dekhte hole
+docker container run --rm --net "network-name" centos curl -s search:9200

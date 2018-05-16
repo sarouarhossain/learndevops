@@ -1,0 +1,4 @@
+** dockerfile is not a shellscript, not a batch file
+
+# build docker from corrent directory dockerfile
+docker build -t "name" .
