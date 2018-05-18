@@ -1,0 +1,17 @@
+# create a mysql container 
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql
+
+** create by setting a volume name
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql
+
+# To see the vloumes
+docker volume ls
+
+# to inspect the volume
+docker volume inspect "volume name"
+
+# special create docker container
+docker container run -d --name nginx -p 8083:80 -v $(pwd):/usr/share/nginx/html nginx --> aikhane pwd holo current directory of pc jekhan theke dockerfile ase and docker image build kora hoise, pwd r porer ongso holo docker file e set kora workdir
+
+# docker container log dekha
+docker container logs -f "container name"

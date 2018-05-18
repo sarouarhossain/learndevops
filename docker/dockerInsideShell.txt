@@ -9,6 +9,9 @@ docker container run -it "image name" bash
 ** if bash is not in the image
 docker container run -it "container name" sh  //sh is smaller, has less feature then bash
 
+* running container r vitore bash chalanor jonno
+docker container exec -it "container name" bash
+
 # start a image after exit, and run bash again 
 docker container start -ai "name of the stoped container"
 

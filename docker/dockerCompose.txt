@@ -1,0 +1,16 @@
+# to run docker compose file
+docker compose up
+or
+docker compose up -d
+
+
+# to stop all the things in compose yml file
+docker compose down
+
+# to see the logs
+docker compose logs
+
+# to see how many containers running
+docker-compose ps
+
+# to see all the services running inside them

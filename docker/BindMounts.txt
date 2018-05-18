@@ -1,0 +1,4 @@
+**** very important
+
+# special create docker container
+docker container run -d --name nginx -p 8083:80 -v $(pwd):/usr/share/nginx/html nginx --> aikhane pwd holo current directory of pc jekhan theke dockerfile ase and docker image build kora hoise, pwd r porer ongso holo docker file e set kora workdir
