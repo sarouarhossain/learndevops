@@ -1,0 +1,50 @@
+## Docker
+	1. docker basic - done
+	2. docker container - done
+	3. docker image - done
+	4. docker compose - 50%
+	5. docker swarm
+	5. container registries
+
+## Jenkins
+	1. jenkins basic - done
+	2. continuous integration
+	3. contenious inspection
+	4. contenious delivery
+	5. pipeline as code
+	6. distributed builds
+
+## AWS
+	* IAM
+		1. Basics - done 
+		2. Detailed - 50%
+
+	* VPC
+		1. Basics - done
+		2. Subnets
+		3. Buiding VPC
+		4. NACL vs Security group
+		5. VPC and ELBs
+		6. NATS and Bastions
+		7. VPC end points and clean-up
+
+	* EC2
+		1. Basics - done
+		2. Detailed
+
+	* Database on AWS
+		1. Basics
+		2. Backups
+		3. DynamoDb
+		4. RedShift
+		5. Elastic Cache
+		6. Aurora
+
+	* AWS object Storage
+		1. S3 bucket 
+		2. Glacier
+		3. CloudFront
+
+	* Route53
+		1. Basics - done
+		2. Detailed 
