@@ -1,0 +1,28 @@
+##
+docker swarm 
+docker node
+docker service
+docker stack
+docker secret
+
+# initialize the swarm
+docker swarm init
+
+# to see the nodes running on
+docker node ls
+
+# create a service
+docker service create "alpine ping 8.8.8.8"--> image info
+
+# to see the services
+docker service ls
+
+# to see the container of the service
+docker service ps "service_name" 
+
+# scale up the service
+docker service update "id of the service/name" --replicas "number"
+
+# remove a service
+docker service rm "name"
+

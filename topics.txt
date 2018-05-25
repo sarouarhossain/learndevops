@@ -21,8 +21,8 @@
 
 	* VPC
 		1. Basics - done
-		2. Subnets
-		3. Buiding VPC
+		2. Subnets - done
+		3. Building VPC
 		4. NACL vs Security group
 		5. VPC and ELBs
 		6. NATS and Bastions

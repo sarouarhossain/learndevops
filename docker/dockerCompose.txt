@@ -6,6 +6,9 @@ docker compose up -d
 
 # to stop all the things in compose yml file
 docker compose down
+or
+docker compose down -v //delete also volumes
+
 
 # to see the logs
 docker compose logs
