@@ -13,10 +13,11 @@
 * ***sudo mv ./kubectl /usr/local/bin/kubectl***
 * ***sudo apt-t get install -y virtualbox*** if you wanna use virtual box as base. You can also use docker as base.
 
-####Start minikube
+####Start/Stop minikube
 It needs virtual machine or docker 
 ***minikube start --vm-driver=hyperkit*** We can use virtual box instead of hyperkit
-***minikube start --driver=docker*** if we want to use docker as base driver 
+***minikube start --driver=docker*** if we want to use docker as base driver
+***minikube stop*** 
 
 ##Basic commands
 --------------------
@@ -25,6 +26,7 @@ It needs virtual machine or docker
 * ***kubectl get pod***
 * ***kubectl get services***
 * ***kubectl create -h*** to get help
+* ***kubectl version*** to get the client and server version of kubernates 
 
 ####Create a deployment
 * ***kubectl create deployment ngnix-depl --image=ngnix***
