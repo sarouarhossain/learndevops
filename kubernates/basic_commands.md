@@ -29,10 +29,13 @@ It needs virtual machine or docker
 * ***kubectl version*** to get the client and server version of kubernates 
 
 ####Create a deployment
-* ***kubectl create deployment ngnix-depl --image=ngnix***
+* create an ngnix deployment
+-> ***kubectl create deployment DEPLOYMENT_NAME --image=IMAGE_NAME***
+ -> ***kubectl create deployment nginx-depl --image=nginx***
 * ***kubectl get deployment***
 * ***kubectl get pod***
 * ***kubectl get replicaset***
-* ***kubectl edit deployment ngnix-depl***
-* ***kubectl logs pod_name***
-* ***kubectl describe pod pod_name***
+* ***kubectl edit deployment nginx-depl***
+* ***kubectl logs POD_NAME***
+* ***kubectl describe pod POD_NAME***
+* ***kubectl delete pod POD_NAME***
