@@ -36,25 +36,34 @@ Kubectl is command line tool to communicate with kubernates cluster.
 * ***kubectl create -h*** to get help
 * ***kubectl version*** to get the client and server version of kubernates 
 
-####Create a deployment
-* create an ngnix deployment
--> ***kubectl create deployment DEPLOYMENT_NAME --image=IMAGE_NAME***
- -> ***kubectl create deployment nginx-depl --image=nginx***
-* ***kubectl get deployment***
+####Pods
 * ***kubectl get pod***
-* ***kubectl get replicaset***
-* ***kubectl edit deployment nginx-depl***
 * ***kubectl logs POD_NAME***
 * ***kubectl describe pod POD_NAME***
 * ***kubectl delete pod POD_NAME***
 * ***kubectl get pod -n kube-system***
-* ***kubectl delete deploy ngnix-depl***
 
 #####Special Note
 -> Deployment for stateless apps
 -> StatefulSet for stateful apps or databases
 
+####Deployment
+Deployment manages all the replica set. Everything bellow the deployment should be managed automatically by kubenates.
+* ***kubectl create deployment DEPLOYMENT_NAME --image=IMAGE_NAME***
+* create an ngnix deployment
+ -> ***kubectl create deployment nginx-depl --image=nginx***
+* create an mongo deployment
+ -> ***kubectl create deployment mongo-depl --image=mongo***
+* ***kubectl get deployment***
+* ***kubectl delete deploy ngnix-depl***
+* ***kubectl edit deployment [deployment_name]***
+* ***kubectl edit deployment nginx-depl***
+####Replica Set
+Replica set is managing the replicas of a pod
+* ***kubectl get replicaset***
 
+####Debugging
+* ***kubectl logs [pod_name]***
 
 #####Special Note: All images are taken from the youtube channel ***TechWorld with Nana***(https://tinyurl.com/yxpn5v88) 
 ***Video Url: https://tinyurl.com/y5bgcn7q***
