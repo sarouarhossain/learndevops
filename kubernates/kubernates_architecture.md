@@ -2,6 +2,7 @@
 ***Video Url: https://tinyurl.com/y5bgcn7q***
 
 ###Nodes
+--------
 1. each node has multiple pods on it
 2. 3 processes must be installed in each nodes
    * container runtime (docker or anything)
@@ -25,16 +26,20 @@
 
 ####Master Node
 ----------------
-#####Api Server
-![nodes](https://user-images.githubusercontent.com/26240597/103597679-2b6f0a80-4f44-11eb-9e25-df57f7247b70.png)
+####Api Server
+-------------
+![apiserver](https://user-images.githubusercontent.com/26240597/103627124-83c3fd80-4f80-11eb-833e-8d307d8f21c3.png)
 
 ####Scheduler
+------------
 ![scheduler](https://user-images.githubusercontent.com/26240597/103598235-74738e80-4f45-11eb-8866-3e3abeb18685.png)
 
 ####Controller manager
+---------------------
 ![controllmanager](https://user-images.githubusercontent.com/26240597/103598521-29a64680-4f46-11eb-9beb-d4c6d824e0eb.png)
 
 ####etcd
+--------
 ![etcd](https://user-images.githubusercontent.com/26240597/103598527-2b700a00-4f46-11eb-94e3-ea3e2f2a6036.png)
 
 
