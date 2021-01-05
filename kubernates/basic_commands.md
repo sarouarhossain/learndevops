@@ -1,3 +1,6 @@
+#####Special Note: All images are taken from the youtube channel ***TechWorld with Nana***(https://tinyurl.com/yxpn5v88) 
+***Video Url: https://tinyurl.com/y5bgcn7q***
+
 ##Install minikube and kubectl
 -------------------------------
 ####Mac OS
@@ -50,3 +53,8 @@ Kubectl is command line tool to communicate with kubernates cluster.
 #####Special Note
 -> Deployment for stateless apps
 -> StatefulSet for stateful apps or databases
+
+
+
+#####Special Note: All images are taken from the youtube channel ***TechWorld with Nana***(https://tinyurl.com/yxpn5v88) 
+***Video Url: https://tinyurl.com/y5bgcn7q***
