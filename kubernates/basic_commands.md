@@ -19,6 +19,11 @@ It needs virtual machine or docker
 ***minikube start --driver=docker*** if we want to use docker as base driver
 ***minikube stop*** 
 
+###What is kubectl??
+Kubectl is command line tool to communicate with kubernates cluster.
+
+![kubectl](https://user-images.githubusercontent.com/26240597/103598849-f617ec00-4f46-11eb-9dae-eeff4ee351cb.png)
+
 ##Basic commands
 --------------------
 * ***kubectl get nodes***
@@ -41,3 +46,7 @@ It needs virtual machine or docker
 * ***kubectl delete pod POD_NAME***
 * ***kubectl get pod -n kube-system***
 * ***kubectl delete deploy ngnix-depl***
+
+#####Special Note
+-> Deployment for stateless apps
+-> StatefulSet for stateful apps or databases

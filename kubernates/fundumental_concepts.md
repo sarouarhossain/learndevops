@@ -1,4 +1,4 @@
-#####Special Note: All images are taken from the youtube channel  TechWorld with Nana(https://tinyurl.com/yxpn5v88) 
+#####Special Note: All images are taken from the youtube channel ***TechWorld with Nana***(https://tinyurl.com/yxpn5v88) 
 ***Video Url: https://tinyurl.com/y5bgcn7q***
 
 ##Pods
@@ -34,5 +34,5 @@
 ![statefulset](https://user-images.githubusercontent.com/26240597/103596956-738d2d80-4f42-11eb-9eb5-5e39e4550916.png)
 
 
-###Special Note: All images are taken from the youtube channel  TechWorld with Nana(https://tinyurl.com/yxpn5v88) 
+###Special Note: All images are taken from the youtube channel  ***TechWorld with Nana***(https://tinyurl.com/yxpn5v88) 
 ***Video Url: https://tinyurl.com/y5bgcn7q***
