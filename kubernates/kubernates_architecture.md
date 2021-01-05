@@ -25,16 +25,16 @@
 
 ####Master Node
 ----------------
-####Api Server
+###Api Server
 ![apiserver](https://user-images.githubusercontent.com/26240597/103627124-83c3fd80-4f80-11eb-833e-8d307d8f21c3.png)
 
-####Scheduler
+###Scheduler
 ![scheduler](https://user-images.githubusercontent.com/26240597/103598235-74738e80-4f45-11eb-8866-3e3abeb18685.png)
 
-####Controller manager
+###Controller manager
 ![controllmanager](https://user-images.githubusercontent.com/26240597/103598521-29a64680-4f46-11eb-9beb-d4c6d824e0eb.png)
 
-####etcd
+###etcd
 ![etcd](https://user-images.githubusercontent.com/26240597/103598527-2b700a00-4f46-11eb-94e3-ea3e2f2a6036.png)
 
 
