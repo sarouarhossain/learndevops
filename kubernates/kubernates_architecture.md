@@ -25,7 +25,7 @@
 
 ####Master Node
 ----------------
-#####Api Server
+####Api Server
 ![apiserver](https://user-images.githubusercontent.com/26240597/103627124-83c3fd80-4f80-11eb-833e-8d307d8f21c3.png)
 
 ####Scheduler
