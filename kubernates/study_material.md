@@ -15,7 +15,7 @@
 14. Prometheus basic
 
 ###Topics to master on
-1.Pod details (configuration)
+1. Pod details (configuration)
 2. resource allocation(HPA- horizontal pod autoscaling, VPA- vertical pod autoscalling)
 3. Create & consume Secrets
 4. ServiceAccounts (permission issues)
