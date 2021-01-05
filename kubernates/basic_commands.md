@@ -58,6 +58,8 @@ Deployment manages all the replica set. Everything bellow the deployment should 
 * ***kubectl delete deploy ngnix-depl***
 * ***kubectl edit deployment [deployment_name]***
 * ***kubectl edit deployment nginx-depl***
+  
+  
 ####Replica Set
 Replica set is managing the replicas of a pod
 * ***kubectl get replicaset***
