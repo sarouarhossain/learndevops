@@ -39,3 +39,5 @@ It needs virtual machine or docker
 * ***kubectl logs POD_NAME***
 * ***kubectl describe pod POD_NAME***
 * ***kubectl delete pod POD_NAME***
+* ***kubectl get pod -n kube-system***
+* ***kubectl delete deploy ngnix-depl***
