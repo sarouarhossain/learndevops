@@ -59,6 +59,9 @@ Deployment manages all the replica set. Everything bellow the deployment should 
 * ***kubectl edit deployment [deployment_name]***
 * ***kubectl edit deployment nginx-depl***
   
+####Deployment with configuration file
+First create a yaml configuration file. Then the command is ***kubectl apply -f config_file_name.yaml*** . Its the same command for update also. K8s knows when to create or update deployment.
+  
   
 ####Replica Set
 Replica set is managing the replicas of a pod
@@ -66,6 +69,6 @@ Replica set is managing the replicas of a pod
 
 ####Debugging
 * ***kubectl logs [pod_name]***
-
+* to login to the container ***kubectl exec -it [pod_name] --bin/bash***
 #####Special Note: All images are taken from the youtube channel ***TechWorld with Nana***(https://tinyurl.com/yxpn5v88) 
 ***Video Url: https://tinyurl.com/y5bgcn7q***

@@ -1,0 +1,2 @@
+1. deployment config file edit kore abr deply korle , alpo somoy r jonno lagging hobe kina?
+2. amra to pod r container e dhuke dhuke kono problem debug korte pari. akhon 10 ta replica thakle to seita difficult?
