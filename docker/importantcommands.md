@@ -1,14 +1,14 @@
-##Pull
+## Pull
 --------------------
 * ***docker pull image_name***
 * ***docker images*** will show all images in your local
 
-##list of containers
+## list of containers
 --------------------
 * ***docker ps -a*** show all running and stopped containers
 * ***docker ps -aq*** list of all containers, only id
 
-##run
+## run
 --------------------
 * ***docker run image_name:version***
 
@@ -21,7 +21,7 @@ start
 -----------------
 * ***docker start container_id***
 
-###start vs run 
+### start vs run 
 
 * ***run*** -> means creating a container
 * ***start*** -> means running a stopped container
@@ -30,13 +30,13 @@ logs
 ------------
 * ***docker logs container_id/container_name***
 
-##log in to a container
+## log in to a container
 ----------------------
 * ***docker exec -it container_id bash***
 
 **Note:** **-it** means interactive terminal
 
-##stop
+## stop
 --------
 * ***docker stop container_id*** [stop a single container] 
 * ***docker stop $(docker ps -aq)*** [stop all containers]
@@ -47,7 +47,7 @@ logs
 * ***docker image prune -a*** [will remove not only dangling but also all unreferenced images]
 * ***docker container rm $(docker container ls -aq)***
 
-##volumes
+## volumes
 --------------
 * ***docker volume ls***
 * ***docker volume rm volume_id***
@@ -55,11 +55,15 @@ logs
  
 **Note:** to bypass the prompt need to use **--force** or **-f**
 
-##networks
+## networks
 ----------------
 * ***docker network ls***
 * ***docker network rm network_id***
 * ***docker network prune*** [remove all networks]
 
 **Note:** to bypass the prompt need to use **--force** or **-f**
+
+## docker-compose
+* ***docker-compose up*** or ***docker-compose up -d***
+* ***docker-compose build*** or ***docker-compose up --build***
 
