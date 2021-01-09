@@ -18,7 +18,7 @@ services:
       - '27017-27019:27017-27019'
 ```
 
-***Now we need init-mongo.js in the directory where docker-compose file resides.
+***Now we need init-mongo.js in the directory where docker-compose file resides.***
 ```
 db.createUser(
     {
