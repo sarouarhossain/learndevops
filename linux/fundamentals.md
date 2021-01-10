@@ -22,3 +22,8 @@ In a command there may be three parts like bellow <br />
 ```rm -f file_name``` <br />
 ```rm -r directory_name``` <br />
 To remove a file option will be **-f** and to remove a directory option will be **-r**
+
+### ~man to show details about a command
+```man ls``` <br />
+It will show what is the work of **ls**, and what are the available options for **ls** .<br /> Actually **man** command show the manuals of a command. Try <br />
+```man man``` and guess what will happen. :grinning:
