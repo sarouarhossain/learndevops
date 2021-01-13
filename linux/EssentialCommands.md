@@ -38,10 +38,42 @@ it will search only in the Documents directory.
 
 By default Linux is case sensitive. To avoid this  
 ```find /home/username/Documents -iname "filename.txt"```  
-i means case insensitive. 
+**i** means case insensitive. 
 
-```sudo find /home/sarouarhossain/Documents/prac -type d -iname "test"```  
-here -type means file type. d means directory, f implies file. 
+```sudo find /home/username/Documents/prac -type d -iname "test"```  
+here **-type** means file type. **d** means directory, **f** implies file.  
+
+```sudo find /home/username/Documents/prac -type d -user username -iname "test"```
+here **-user** implies the owner of the file we are searching.
 
 ### ~locate to find a file in the system
-This needs database to search by default. So database needs to be up to date.
+locate uses a database to search by default. So database needs to be up to date.  
+```sudo updatedb```  
+
+```locate "search.txt"```   
+this will locate the file.  
+
+for case insensitive search
+```locate -i "search.txt"``` 
+
+### ~which
+Return the location of a command based on the PATH settings  
+```which python```  
+
+```echo $PATH``` to show the path of the all commands
+
+### ~whereis
+```whereis python```  
+Return all version of installed python information, also about the man information.  
+Sometimes this is unreadable. To make it more readable  
+```whereis python | tr " " '\n'```
+**|** means pipes, **tr** means translate all **" "**(spaces) into **\n**(new lines)
+
+### ~type
+Returns the information about the command based on shell configuration.   
+```type python```  
+
+If we type ```type ls```, output will be like ```ls is an alias for ls --color=tty```  
+**alias** means short formed command from an original long command.  
+In this type of cases, type -  
+```type -a ls```  
