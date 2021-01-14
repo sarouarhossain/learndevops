@@ -147,5 +147,34 @@ Lets consider we don't have any file named **filex.txt** , and we command -
 ```cat filex.txt 2>>error.txt``` -> it will write the error messages to the error.txt.  
 ```cat filex.txt 2>>/dev/null``` -> **/dev/null** is like black hole. It is maintained by operating system. If something goes to there , there is no way to retrieve that.   
 
+### Basic Regex
+**^** Start of a string or a line
+**$** End of a string or a line
+**.** wildcard which can match any character except new line
+**|** Matches a specific character or group of characters
+**\*** Used to escape a special character
+**t** the character "t"
+**az** the string "az"
+
+```grep '^The' filename.txt```  -> It will output all the lines start with **The** from the file.  
+```grep '^T[a-z]^e' search.txt``` ->  
+```grep '\<[tT]he\>' search.txt``` -> Find all **the** uppercase or lower case.  
+```grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b" search.txt``` -> search all email address from the file.   
+```grep -E -o -i "\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b" search.txt``` also same .  
+
+### TAR - Tape ARchive
+```tar -cvf mybackup.tar /home/sarouarhossain/Documents/prac/toarchive/``` -> to archive file
+
+```tar -cvfz mybackup.tar.gz /home/sarouarhossain/Documents/prac/toarchive/``` -> to zip the file
+
+```tar -xvfz mybackup.tar.gz ``` -> to unzip the file
+```tar -xvfz mybackup.tar.gz --directory=torestore ``` -> to unzip in a directory
+
+```tar -tvf mybackup.tar ``` -> to see the contents of a tar file
+
+
+
+
+
 
 
