@@ -109,3 +109,43 @@ If we want to sort and save. In that case we have to redirect the sorted data in
 ```touch filename.txt``` will create a new file of 0 bytes. It also used to update the access and modification times. 
 
 **vim/nano** is text editor like Notepad. 
+
+
+### ~diff/comm/cmp
+```diff``` -> Compare two files or directories line by line.  
+```comm``` -> Compare two sorted files.  
+```cmp``` -> Compare two files byte by byte, and returns the position of the first difference.  
+
+```diff fileone.txt filetwo.txt```  
+```diff -c fileone.txt filetwo.txt``` context(-c) option will help to understand more clearly.  
+``` diff -c ./dir1 ./dir2``` to compare directory.  
+
+```comm file1 file2``` file1 and file2 must have to be sorted. 
+
+```cmp file.txt file2.txt``` will return the first difference line number.  
+
+### input output redirection
+**stdin(0)** -> standard input  
+**stdout(1)** -> standard output  
+**stderr(2)** -> standard error   
+**| (pipe)**    
+**> (create/override)**  
+**>> (create/append)**  
+**< (input)**  
+
+```ls -l /etc | less```  
+```cat file.txt | sort | head -10``` -> This will cat contents of file.txt, then sort the lines, then output the first 10 lines.   
+```ls -l /etc > etclist.txt``` -> This list out all contents of **/etc** and print this to **etclist.txt** file.  
+```ls -l ./ >> file.txt``` -> This will also do the same thing. But if **file.txt** is already exists, it will not override the file. Instead it will append the new data.  
+
+```less file.txt```  
+```less < file.txt```  
+Both commands will do the same thing. Showing the contents of **file.txt** . In second command we are passing as input file.txt.  
+
+Lets consider we don't have any file named **filex.txt** , and we command -  
+```cat filex.txt``` -> it will create a standard error.  
+```cat filex.txt 2>>error.txt``` -> it will write the error messages to the error.txt.  
+```cat filex.txt 2>>/dev/null``` -> **/dev/null** is like black hole. It is maintained by operating system. If something goes to there , there is no way to retrieve that.   
+
+
+
