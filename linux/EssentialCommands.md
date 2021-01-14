@@ -77,3 +77,35 @@ If we type ```type ls```, output will be like ```ls is an alias for ls --color=t
 **alias** means short formed command from an original long command.  
 In this type of cases, type -  
 ```type -a ls```  
+
+### ~cat/more/less/sort to view the contents of a file 
+```cat filename.txt```  
+but this is not convenient for a long file.  
+
+For long file we can use **more** command, it will display one page at a time. Press **space** for next page.   
+```more filename.txt```  
+
+we can combine both this commands using a pipe **|**  
+```cat filename.txt | more```  
+
+**less** command is like **more** command, but more flexible. Using **less** command we can also scroll. We can also perform keyword search.  
+```less filename.txt```  we can also search a keyword by ```/keyword```  
+The most cool feature of this command is that it can watch file. Like watching log file in real time.  
+```sudo less +F /path/log```  
+
+**sort** command will sort the contents of a file. 
+```sort filename.txt```  
+```cat filename.txt | sort```  
+
+To sort in reverse order  
+```sort -r filename.txt```  
+```cat filename.txt | sort -r```  
+
+If we want to sort and save. In that case we have to redirect the sorted data in a new file. 
+```sort filename.txt > sorted_filename.txt```  
+
+
+### ~touch/vim/nano
+```touch filename.txt``` will create a new file of 0 bytes. It also used to update the access and modification times. 
+
+**vim/nano** is text editor like Notepad. 
