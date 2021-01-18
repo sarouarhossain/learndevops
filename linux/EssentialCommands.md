@@ -193,14 +193,23 @@ show inode - ```ls -li```
 If we update the data of hardlink , original file data will also be updated. If we delete the original file, still data will be remain in the hardlink file. 
 
 **Soft Link**  
-1. A redirect to file (shortcut or alias)   
+1. A redirect to file (shortcut in windows or alias in mac)   
 2. Can be a file or directory   
-3. Can be on different filesystem  
-4. If the source file is deleted the softlink file will be broken   
+3. Has a unique inode
+4. Can be on different filesystem  
+5. If the source file is deleted the softlink file will be broken   
 
 create - ```ln -s file.txt hardlinkname```  
 
+### File Permissions
 
+
+![permission](https://user-images.githubusercontent.com/26240597/104897466-c1cb1380-59bb-11eb-973e-9b1a6666ecc9.png)
+
+
+```sudo chown new_user_name file``` -> change the user of the file.  
+```sudo chown :new_group_name file``` -> change the group of the file.  
+```sudo chown new_user:new_group file``` -> change the user and group of the file.  
 
 
 
