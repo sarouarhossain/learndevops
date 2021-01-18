@@ -18,10 +18,17 @@ here **ls** is the command, **-l** is the option and **build.gradle** is the arg
 In a command there may be three parts like bellow <br />
 ```command options argument```
 
-### ~rm to remove a file or directory
-```rm -f file_name``` <br />
-```rm -r directory_name``` <br />
-To remove a file option will be **-f** and to remove a directory option will be **-r**
+### create/copy/move/rename/delete file or directory
+**File**  
+1. create - ```touch filename.txt```  
+2. copy - ```cp /path/filename.txt /path/directory``` or ```cp /path/filename.txt /path/directory/filename.txt```  
+3. move - ```mv /path/filename.txt /path/directory``` or ```mv /path/filename.txt /path/directory/filename.txt```  
+4. rename ```mv filename.txt file_new_name.txt```  
+5. delete ```rm /path/filename.txt ``` or ```rm -f /path/filename.txt ``` here **-f** means force delete.  
+
+**Directory**
+1. create - ```mkdir directory_name``` or ```mkdir /path/directory_name```  
+2. remove - ```rm -r directory_name``` or ```rm -r /path/directory_name``` this may throw permission error sometimes. In that case use ```rm -rf directory_name```, here **-f** means force delete.   
 
 ### ~man to show details about a command
 ```man ls``` <br />
