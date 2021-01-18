@@ -180,6 +180,28 @@ Lets consider we don't have any file named **filex.txt** , and we command -
 ```tar -tvf mybackup.tar ``` -> to see the contents of a tar file
 
 
+### creating and managing hard and soft links
+**Hard Link**  
+1. Direct pointer to the file. (Same inode value)  
+2. Only used for file  
+3. Share the same inode, must be on the same filesystem. 
+4. As long as hard link exists , data exists
+  
+create - ```ln file.txt hardlinkname```
+show inode - ```ls -li```  
+
+If we update the data of hardlink , original file data will also be updated. If we delete the original file, still data will be remain in the hardlink file. 
+
+**Soft Link**  
+1. A redirect to file (shortcut or alias)   
+2. Can be a file or directory   
+3. Can be on different filesystem  
+4. If the source file is deleted the softlink file will be broken   
+
+create - ```ln -s file.txt hardlinkname```  
+
+
+
 
 
 
