@@ -212,7 +212,30 @@ create - ```ln -s file.txt hardlinkname```
 ```sudo chown new_user:new_group file``` -> change the user and group of the file.  
 
 
+### Doc about commands
+```man command_name```  
+```info command_name```  
+```command_name --help```  
+```whatis command_name```  
+
+### Permission, User, Group change using `find` command 
+For example we are changing user and group of ```/opt/mypage``` directory elements. Give read/write permissions to some files and read/write/execute permission to other all files.    
+1. ```sudo -i```  change to super user    
+2. `find /opt/mypage -ls`  
+check the file list of mypage directory
+3. `find /opt/mypage -exec chown user_name:group_name {} \;`  
+here `-exec` means execute, `{}` means all output files of find command.  
+4. `find /opt/mypage -name "d*" -exec chmod 660 {} \;`  
+here `d*` means files that start with letter d. 
+5. `find /opt/mypage '!' -name "d*" -exec chmod 770 {} \;` 
+here `'!'` means not. Files that are not start with d letter. 
+
+Lets we have a directory called home, and we have some files which has no user and groups. We want to set username and group to those files. 
+
+1. `sudo -i`  
+2. `find /home -nouser -a -nogroup -ls`  
+here `-a` means and. 
+3. `find /home -nouser -a -nogroup -exec chown user_name:group_name {} \;`
 
 
-
-
+### Copy through SSH channel
