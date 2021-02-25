@@ -239,3 +239,15 @@ here `-a` means and.
 
 
 ### Copy through SSH channel
+Lets consider we are copying files from `/opt/myapp` to the remote servers `/opt` , and copy remote servers `/opt/myapi` to our host.  
+1. `ls -lR /opt`  
+2. `scp -rp /opt/myapp user_name@remote_ip:/opt`  
+this will push `/opt/myapp` to the remote server.  
+3. `scp -rp user_name@remote_ip:/opt/myapi /opt`  
+this will pull `/opt/myapi` from remote server to our host `/opt` directory.  
+4. `rsync -aP /opt/myapp user_name@remote_ip:/opt`  
+this will push `/opt/myapp` to the remote server.  
+5. `rsync -aP user_name@remote_ip:/opt/myapi /opt`  
+this will pull `/opt/myapi` from remote server to our host `/opt` directory.  
+6. `rsync -naP /opt/ user_name@remote_ip:/opt`  
+
