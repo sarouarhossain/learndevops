@@ -212,16 +212,55 @@ create - ```ln -s file.txt hardlinkname```
 ```sudo chown new_user:new_group file``` -> change the user and group of the file.
 
 
-```stat filename``` -> to see the stats of the file
-```lsattr filename``` -> to see the file attribute
-```sudo chattr +i filename``` -> to add immutability attribute
-```sudo chattr -i filename``` -> to remove immutability attribute
-
-
 ### User Access
 ```whoami``` -> returns which user logged in  
 ```id``` -> returns more information about the user logged in  
 
-```sudo cat /etc/sudoers``` -> to show the sudoers file
+```sudo cat /etc/sudoers``` -> to show the sudoers file  
+
+```stat filename``` -> to see the stats of the file
+```lsattr filename``` -> to see the file attribute
+```sudo chattr +i filename``` -> to add immutability attribute
+```sudo chattr -i filename``` -> to remove immutability attribute  
+
+
+### Doc about commands
+```man command_name```  
+```info command_name```  
+```command_name --help```  
+```whatis command_name```  
+
+### Permission, User, Group change using `find` command 
+For example we are changing user and group of ```/opt/mypage``` directory elements. Give read/write permissions to some files and read/write/execute permission to other all files.    
+1. ```sudo -i```  change to super user    
+2. `find /opt/mypage -ls`  
+check the file list of mypage directory
+3. `find /opt/mypage -exec chown user_name:group_name {} \;`  
+here `-exec` means execute, `{}` means all output files of find command.  
+4. `find /opt/mypage -name "d*" -exec chmod 660 {} \;`  
+here `d*` means files that start with letter d. 
+5. `find /opt/mypage '!' -name "d*" -exec chmod 770 {} \;` 
+here `'!'` means not. Files that are not start with d letter. 
+
+Lets we have a directory called home, and we have some files which has no user and groups. We want to set username and group to those files. 
+
+1. `sudo -i`  
+2. `find /home -nouser -a -nogroup -ls`  
+here `-a` means and. 
+3. `find /home -nouser -a -nogroup -exec chown user_name:group_name {} \;`
+
+
+### Copy through SSH channel
+Lets consider we are copying files from `/opt/myapp` to the remote servers `/opt` , and copy remote servers `/opt/myapi` to our host.  
+1. `ls -lR /opt`  
+2. `scp -rp /opt/myapp user_name@remote_ip:/opt`  
+this will push `/opt/myapp` to the remote server.  
+3. `scp -rp user_name@remote_ip:/opt/myapi /opt`  
+this will pull `/opt/myapi` from remote server to our host `/opt` directory.  
+4. `rsync -aP /opt/myapp user_name@remote_ip:/opt`  
+this will push `/opt/myapp` to the remote server.  
+5. `rsync -aP user_name@remote_ip:/opt/myapi /opt`  
+this will pull `/opt/myapi` from remote server to our host `/opt` directory.  
+6. `rsync -naP /opt/ user_name@remote_ip:/opt`  
 
 
