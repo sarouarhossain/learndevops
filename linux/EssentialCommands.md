@@ -209,10 +209,19 @@ create - ```ln -s file.txt hardlinkname```
 
 ```sudo chown new_user_name file``` -> change the user of the file.  
 ```sudo chown :new_group_name file``` -> change the group of the file.  
-```sudo chown new_user:new_group file``` -> change the user and group of the file.  
+```sudo chown new_user:new_group file``` -> change the user and group of the file.
 
 
+```stat filename``` -> to see the stats of the file
+```lsattr filename``` -> to see the file attribute
+```sudo chattr +i filename``` -> to add immutability attribute
+```sudo chattr -i filename``` -> to remove immutability attribute
 
 
+### User Access
+```whoami``` -> returns which user logged in  
+```id``` -> returns more information about the user logged in  
+
+```sudo cat /etc/sudoers``` -> to show the sudoers file
 
 
