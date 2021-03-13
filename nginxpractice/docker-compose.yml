@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  nginx:
+    image: nginx
+    restart: always
+    ports:
+    - "8000:8080"
+    - "8888:8888"
+    volumes:
+      - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+      - "./html:/usr/abc/html:ro"
+      - "./images:/usr/abc/images:ro"
