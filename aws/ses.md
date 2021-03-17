@@ -1,0 +1,1 @@
+aws cli list-templates
