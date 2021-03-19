@@ -10,3 +10,8 @@
 
 ### reload
 `nginx reload`
+
+`sudo lsof -i TCP:80`
+
+
+
