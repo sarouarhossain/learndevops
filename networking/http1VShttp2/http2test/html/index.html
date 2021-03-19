@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h1>Hello world.</h1>
+        <table id = 'img' border = 0 cellpadding = 1 cellspacing = 0></table>
+
+        <script>
+            const table = document.getElementById("img");
+            var count = 1;
+            for (let row = 1; row <= 30 ; row++)
+            {
+                const tr = document.createElement("tr");
+
+                for (let col = 1; col <= 30; col++)
+                {
+                    const td = document.createElement("td");
+                    const img = document.createElement("img")
+                    img.src = `images/image_part_${count.toString().padStart(3,'0')}.jpg`
+                    td.appendChild(img)
+                    tr.appendChild(td)
+                    count++;
+                }
+                table.appendChild(tr); 
+            }
+
+
+        </script>
+    </body>
+</html>
