@@ -1,0 +1,8 @@
+{
+    "Template": {
+        "TemplateName": "point-earned_ja",
+        "SubjectPart": "【ZIPAIR】ポイント獲得明細",
+        "TextPart": "{{last_name}} {{first_name}} {{middle_name}}{{title_name}}\r\n\r\nポイントを獲得しました。\r\n------------------------- \r\n■獲得ポイント\r\n{{earned_point}} pts \r\n \r\n■有効期限 \r\n{{expiry_year}}年{{expiry_month}}月{{expiry_day}}日({{expiry_week}}) {{expiry_time}} UTC\r\n \r\n■獲得日時 \r\n{{earned_year}}年{{earned_month}}月{{earned_day}}日({{earned_week}}) {{earned_time}} UTC\r\n\r\nZIPAIRをご利用いただき、ありがとうございます。\r\n\r\nZIPAIR Tokyo Inc. (www.zipair.net)\r\n\r\nこのメールは送信専用メールアドレスから配信されています。このままご返信いただいてもお答えできませんのでご了承ください。",
+        "HtmlPart": "<html>{{last_name}} {{first_name}} {{middle_name}}{{title_name}}<br><br>ポイントを獲得しました。<br>------------------------- <br>■獲得ポイント<br>{{earned_point}} pts <br> <br>■有効期限 <br>{{expiry_year}}年{{expiry_month}}月{{expiry_day}}日({{expiry_week}}) {{expiry_time}} UTC<br> <br>■獲得日時 <br>{{earned_year}}年{{earned_month}}月{{earned_day}}日({{earned_week}}) {{earned_time}} UTC<br><br>ZIPAIRをご利用いただき、ありがとうございます。<br><br>ZIPAIR Tokyo Inc. <a href='https://www.zipair.net'>(www.zipair.net)</a><br><br>このメールは送信専用メールアドレスから配信されています。このままご返信いただいてもお答えできませんのでご了承ください。<html>"
+    }
+}

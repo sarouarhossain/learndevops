@@ -1,0 +1,8 @@
+{
+    "Template": {
+        "TemplateName": "point-earned_th",
+        "SubjectPart": "【ZIPAIR】รายละเอียดของพอยต์ที่ได้รับ",
+        "TextPart": "{{title_name}} {{first_name}} {{middle_name}} {{last_name}}\r\n\r\nท่านได้รับพอยต์สะสม\r\n------------------------- \r\n■พอยต์ที่ได้รับ \r\n {{earned_point}} pts \r\n \r\n■วันหมดอายุ \r\n{{expiry_week}} {{expiry_day}} {{expiry_month}} {{expiry_year}} {{expiry_time}} UTC\r\n \r\n■วันที่ได้รับพอยต์ \r\n{{earned_week}} {{earned_day}} {{earned_month}} {{earned_year}} {{earned_time}} UTC\r\n\r\n\r\nขอบคุณที่ท่านให้การสนับสนุน ZIPAIR\r\n\r\nZIPAIR Tokyo Inc. (www.zipair.net)\r\n\r\nอีเมลนี้สำหรับส่งออกเท่านั้น โปรดทราบว่าหากท่านตอบกลับมายังอีเมลนี้ ทางเราจะไม่สามารถตอบกลับได้",
+        "HtmlPart": "<html>{{title_name}} {{first_name}} {{middle_name}} {{last_name}}<br><br>ท่านได้รับพอยต์สะสม<br>------------------------- <br>■พอยต์ที่ได้รับ <br> {{earned_point}} pts <br> <br>■วันหมดอายุ <br>{{expiry_week}} {{expiry_day}} {{expiry_month}} {{expiry_year}} {{expiry_time}} UTC<br> <br>■วันที่ได้รับพอยต์ <br>{{earned_week}} {{earned_day}} {{earned_month}} {{earned_year}} {{earned_time}} UTC<br><br><br>ขอบคุณที่ท่านให้การสนับสนุน ZIPAIR<br><br>ZIPAIR Tokyo Inc. <a href='https://www.zipair.net'>(www.zipair.net)</a><br><br>อีเมลนี้สำหรับส่งออกเท่านั้น โปรดทราบว่าหากท่านตอบกลับมายังอีเมลนี้ ทางเราจะไม่สามารถตอบกลับได้<html>"
+    }
+}

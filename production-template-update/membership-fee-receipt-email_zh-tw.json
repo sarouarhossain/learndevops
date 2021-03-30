@@ -1,0 +1,8 @@
+{
+    "Template": {
+        "TemplateName": "membership-fee-receipt-email_zh-tw",
+        "SubjectPart": "【ZIPAIR】ZIPAIR Point Club Plus年會費付款完成",
+        "TextPart": "{{last_name}} {{first_name}} {{middle_name}} {{title_name}} \r\n\r\n您已完成ZIPAIR Point Club Plus的年會費支付。\r\n請繼續利用會員服務。 \r\n----------------\r\n■付款金額 \r\n{{currency_symbol}}{{total_amount}} (不包含在日本課稅範圍內) \r\n\r\n■刷卡付款部分 \r\n{{currency_symbol}}{{payment_amount}} \r\n\r\n■使用點數 \r\n{{paid_by_point}} pts \r\n\r\n■獲得點數 \r\n{{get_by_point}} pts \r\n\r\n■付款日期 \r\n{{payment_year}}年{{payment_month}}月{{payment_day}}日{{payment_week}} {{payment_time}} UTC \r\n\r\n我們衷心感謝您使用ZIPAIR。\r\n\r\nZIPAIR Tokyo Inc. (www.zipair.net)\r\n\r\n本郵件以寄件專用位址傳送。即使回信也無法回覆，尚請見諒。",
+        "HtmlPart": "<html>{{last_name}} {{first_name}} {{middle_name}} {{title_name}} <br><br>您已完成ZIPAIR Point Club Plus的年會費支付。<br>請繼續利用會員服務。 <br>----------------<br>■付款金額 <br>{{currency_symbol}}{{total_amount}} (不包含在日本課稅範圍內) <br><br>■刷卡付款部分 <br>{{currency_symbol}}{{payment_amount}} <br><br>■使用點數 <br>{{paid_by_point}} pts <br><br>■獲得點數 <br>{{get_by_point}} pts <br><br>■付款日期 <br>{{payment_year}}年{{payment_month}}月{{payment_day}}日{{payment_week}} {{payment_time}} UTC <br><br>我們衷心感謝您使用ZIPAIR。<br><br>ZIPAIR Tokyo Inc. <a href='https://www.zipair.net'>(www.zipair.net)</a><br><br>本郵件以寄件專用位址傳送。即使回信也無法回覆，尚請見諒。<html>"
+    }
+}

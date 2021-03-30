@@ -1,0 +1,8 @@
+{
+    "Template": {
+        "TemplateName": "point-earned_zh-tw",
+        "SubjectPart": "【ZIPAIR】獲得點數明細",
+        "TextPart": "{{last_name}} {{first_name}} {{middle_name}} {{title_name}} \r\n\r\n您的獲得點數。\r\n------------------------- \r\n■獲得點數 \r\n {{earned_point}} pts \r\n \r\n■有效期限 \r\n{{expiry_year}}年{{expiry_month}}月{{expiry_day}}日{{expiry_week}} {{expiry_time}} UTC\r\n \r\n■獲得日期 \r\n{{earned_year}}年{{earned_month}}月{{earned_day}}日{{earned_week}} {{earned_time}} UTC\r\n\r\n我們衷心感謝您使用ZIPAIR。\r\n\r\nZIPAIR Tokyo Inc. (www.zipair.net)\r\n\r\n本郵件以寄件專用位址傳送。即使回信也無法回覆，尚請見諒。",
+        "HtmlPart": "<html>{{last_name}} {{first_name}} {{middle_name}} {{title_name}} <br><br>您的獲得點數。<br>------------------------- <br>■獲得點數 <br> {{earned_point}} pts <br> <br>■有效期限 <br>{{expiry_year}}年{{expiry_month}}月{{expiry_day}}日{{expiry_week}} {{expiry_time}} UTC<br> <br>■獲得日期 <br>{{earned_year}}年{{earned_month}}月{{earned_day}}日{{earned_week}} {{earned_time}} UTC<br><br>我們衷心感謝您使用ZIPAIR。<br><br>ZIPAIR Tokyo Inc. <a href='https://www.zipair.net'>(www.zipair.net)</a><br><br>本郵件以寄件專用位址傳送。即使回信也無法回覆，尚請見諒。<html>"
+    }
+}

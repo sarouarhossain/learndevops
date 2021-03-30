@@ -1,0 +1,8 @@
+{
+    "Template": {
+        "TemplateName": "point-earned_en",
+        "SubjectPart": "[ZIPAIR] Acquired Points Statement",
+        "TextPart": "{{title_name}} {{first_name}} {{middle_name}} {{last_name}}\r\n\r\nYou have acquired points.\r\n------------------------ \r\n■Acquired Points\r\n{{earned_point}} pts \r\n \r\n■Expiration date \r\n{{expiry_week}}, {{expiry_month}} {{expiry_day}}, {{expiry_year}} {{expiry_time}} UTC\r\n \r\n■Date and Time of Acquisition \r\n{{earned_week}}, {{earned_month}} {{earned_day}}, {{earned_year}} {{earned_time}} UTC\r\n\r\nThank you for choosing ZIPAIR.\r\n\r\nZIPAIR Tokyo Inc. (www.zipair.net)\r\n\r\nPlease do not reply to this email as it is sent from an unattended mailbox.",
+        "HtmlPart": "<html>{{title_name}} {{first_name}} {{middle_name}} {{last_name}}<br><br>You have acquired points.<br>------------------------ <br>■Acquired Points<br>{{earned_point}} pts <br> <br>■Expiration date <br>{{expiry_week}}, {{expiry_month}} {{expiry_day}}, {{expiry_year}} {{expiry_time}} UTC<br> <br>■Date and Time of Acquisition <br>{{earned_week}}, {{earned_month}} {{earned_day}}, {{earned_year}} {{earned_time}} UTC<br><br>Thank you for choosing ZIPAIR.<br><br>ZIPAIR Tokyo Inc. <a href='https://www.zipair.net'>(www.zipair.net)</a><br><br>Please do not reply to this email as it is sent from an unattended mailbox.<html>"
+    }
+}
