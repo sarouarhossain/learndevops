@@ -1,0 +1,37 @@
+[
+    {
+        "userId": "866bc60e-b117-11ea-abbc-0a58a9feac2a",
+        "emailAddress": "sarouarhossain+7@team-lab.com",
+        "freeItems": [
+            "HOSSAIN7",
+            " 女士",
+            "MIDDLENAME7",
+            "SAROUAR7",
+            "https://frontend-dev2.aws-274321376964.team-lab.com/zh-cn/flight/VNY5EQ"
+        ]
+    }
+    ,
+    {
+        "userId": "70cc2fea-d5aa-4c1f-bfc2-a92adde1fa24",
+        "emailAddress": "yamamotonaoyuki+B4@team-lab.com",
+        "freeItems": [
+            "SEI",
+            " 先生",
+            "SI",
+            "MEI",
+            "https://frontend-dev2.aws-274321376964.team-lab.com/zh-cn/flight/OTTI3R"
+        ]
+    }
+    ,
+    {
+        "userId": "3411c1ba-7da7-4546-9e1a-f4df0458dbaa",
+        "emailAddress": "SAROUARHOSSAIN+63@TEAM-LAB.COM",
+        "freeItems": [
+            "HOSSAIN63",
+            " 先生",
+            null,
+            "SAROUAR63",
+            "https://frontend-dev2.aws-274321376964.team-lab.com/zh-cn/flight/3MGSBP"
+        ]
+    }
+    ]

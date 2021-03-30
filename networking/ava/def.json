@@ -1,0 +1,100 @@
+
+
+[
+    {
+       "confirmationNumber": "HQ5OO7",
+       "userId": "0372b813-62d2-4e07-8230-7e4ba959895c",
+       "locale": "ja",
+       "email": "yamamotonaoyuki+A4@team-lab.com",
+       "firstName": "MEI",
+       "lastName": "SEI",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "FBJ81M",
+       "userId": "d4a6de0e-f981-4312-ac91-dcf33bf8f08d",
+       "locale": "ja",
+       "email": "rezilla.babu@jal.com",
+       "firstName": "MASA",
+       "lastName": "HINO",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "FBJ81M",
+       "userId": "74be4b20-77a4-498c-ad75-7ec2d35dbe88",
+       "locale": "ja",
+       "email": "prabhanshu.mishra@jal.com",
+       "firstName": "MASA",
+       "lastName": "KOSEKI",
+       "sex": 2
+    },
+    {
+       "confirmationNumber": "81PBMW",
+       "userId": "6228c175-d2ae-4ac2-b731-f9f7ace0f748",
+       "locale": "ja",
+       "email": "yamamotonaoyuki+A4@team-lab.com",
+       "firstName": "MEI",
+       "lastName": "SEI",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "2JVBVP",
+       "userId": "2ee656a0-7d81-4af0-8c81-7f73fb6b2043",
+       "locale": "ja",
+       "email": "yamamotonaoyuki+A4@team-lab.com",
+       "firstName": "MEI",
+       "lastName": "SEI",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "642ZHP",
+       "userId": "804f6513-2919-4067-a849-ec4ffc50672b",
+       "locale": "ja",
+       "email": "yamamotonaoyuki+A4@team-lab.com",
+       "firstName": "MEI",
+       "lastName": "SEI",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "2II9I2",
+       "userId": "09d4f5e6-2c8b-4016-825c-f39aa47bf090",
+       "locale": "ja",
+       "email": "yamamotonaoyuki+A4@team-lab.com",
+       "firstName": "MEI",
+       "lastName": "SEI",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "O0HS96",
+       "userId": "7149ba17-6987-4f01-9945-3746d2f81d18",
+       "locale": "ja",
+       "email": "rezilla.babu@jal.com",
+       "firstName": "AYATA",
+       "lastName": "HINO",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "S0R6DU",
+       "userId": "eb69d7b8-ec7f-47f7-beb9-80f4f2f5d2ef",
+       "locale": "ja",
+       "email": "yamamotonaoyuki+A4@team-lab.com",
+       "firstName": "MEI",
+       "lastName": "SEI",
+       "sex": 1
+    }
+ ]
+ 
+ 
+
+logger.info("userInfoList: " + Json.toJson(userInfoList));
+logger.info("finalUserList: " + Json.toJson(finalUserList));
+logger.info("userListByLocale: " + Json.toJson(userListByLocale));
+
+logger.info("confirmationNumbers: " + Json.toJson(confirmationNumbers));
+
+logger.info(
+"flightDetailMapByConfirmationNumber : "
+    + Json.toJson(flightDetailMapByConfirmationNumber));
+logger.info(
+"autoCheckInTargetMapByConfirmationNumber : "
+    + Json.toJson(autoCheckInTargetMapByConfirmationNumber));

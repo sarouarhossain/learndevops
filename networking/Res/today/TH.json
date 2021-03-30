@@ -1,0 +1,25 @@
+[
+    {
+        "userId": "33d58dac-b05d-11ea-834c-0a58a9feac2a",
+        "emailAddress": "sarouarhossain+1@team-lab.com",
+        "freeItems": [
+            "HOSSAIN",
+            "นาย ",
+            "MIDDLENAME",
+            "SAROUAR",
+            "https://frontend-dev2.aws-274321376964.team-lab.com/th/flight/83DNMZ"
+        ]
+    }
+    ,
+    {
+        "userId": "71050fba-ac40-49ea-a99c-2b30f368f59c",
+        "emailAddress": "yamamotonaoyuki+B4@team-lab.com",
+        "freeItems": [
+            "SEI",
+            "นาย ",
+            "THAI",
+            "MEI",
+            "https://frontend-dev2.aws-274321376964.team-lab.com/th/flight/NV9EIM"
+        ]
+    }
+    ]	

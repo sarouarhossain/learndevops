@@ -1,0 +1,33 @@
+
+
+[
+    {
+       "confirmationNumber": "HQ5OO7",
+       "userId": "0372b813-62d2-4e07-8230-7e4ba959895c",
+       "locale": "ja",
+       "email": "yamamotonaoyuki+A4@team-lab.com",
+       "firstName": "MEI",
+       "lastName": "SEI",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "FBJ81M",
+       "userId": "d4a6de0e-f981-4312-ac91-dcf33bf8f08d",
+       "locale": "ja",
+       "email": "rezilla.babu@jal.com",
+       "firstName": "MASA",
+       "lastName": "HINO",
+       "sex": 1
+    },
+    {
+       "confirmationNumber": "FBJ81M",
+       "userId": "74be4b20-77a4-498c-ad75-7ec2d35dbe88",
+       "locale": "ja",
+       "email": "prabhanshu.mishra@jal.com",
+       "firstName": "MASA",
+       "lastName": "KOSEKI",
+       "sex": 2
+    }
+ ]
+ 
+ 
