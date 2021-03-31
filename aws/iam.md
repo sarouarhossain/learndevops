@@ -1,3 +1,4 @@
+* IAM consists of User, groups and roles
 * IAM is for a global region, not for a particular region.
 * Policy - a document that defines one or more permissions. An IAM policy can be attached to a user, group or role. 
 * Role - you can create a role and then assign them to users, applications, and services to give access to AWS resources.
