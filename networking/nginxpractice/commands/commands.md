@@ -1,12 +1,15 @@
+### check ninx version
+`nginx -v`  
+
 ### install nginx
-`sudo apt update`
+`sudo apt update`  
 `sudo apt install nginx`
 
 ### start nginx
-`nginx`
+`sudo nginx`
 
 ### stop nginx
-`nginx -s stop`
+`sudo nginx -s stop`
 
 ### reload
 `nginx reload`
