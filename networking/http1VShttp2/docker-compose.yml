@@ -1,6 +1,6 @@
 version: "2"
 
-services:
+# http 1.1 nginx docker 
   nginx:
     image: nginx:stable
     restart: always
