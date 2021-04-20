@@ -17,6 +17,7 @@
 `kubectl apply` -> after changing the pod config yml file.  
 `kubectl edit pod pod_name -n namespace_name` -> after save auto apply.  
 `kubectl delete pod pod_name -n namespace_name`  
+`kubectl delete pod pod_name --now -n namespace_name`  
 
 `kubectl logs pod_name -n namespace_name`  
 
@@ -30,4 +31,32 @@ key:vale configuration data
 
 There is a option called config map mounted volume.  
 
+`kubectl exec my-securitycontext-pod -n my-ns -- ps` -> to see the running commands inside pod
 
+### ResourceRequest 
+```
+resources:
+    requests:
+    memory: "64Mi"
+    cpu: "250m"
+    limits:
+    memory: "128Mi"
+    cpu: "500m"
+```
+
+### Secrets
+`kubectl get secrets -n namespace_name`  
+`kubectl apply -f my-secret.yml`
+
+```
+env:
+- name: MY_PASSWORD
+    valueFrom: 
+    secretKeyRef:
+        name: my-secret
+        key: myKey
+```
+
+### Service Accounts 
+`kubectl create serviceaccount my-serviceaccount -n namespace_name`  
+`kubectl get serviceaccounts -n namespace_name`
