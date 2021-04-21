@@ -59,4 +59,10 @@ env:
 
 ### Service Accounts 
 `kubectl create serviceaccount my-serviceaccount -n namespace_name`  
-`kubectl get serviceaccounts -n namespace_name`
+`kubectl get serviceaccounts -n namespace_name`  
+
+### Multi Container Pod
+3 ways they can interact with each other 
+* Shared network (using http://localhost:port)
+* Shared Storage Volume
+* Shared Process Namespace

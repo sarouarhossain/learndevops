@@ -27,6 +27,6 @@ example:
 
 `kill -9 process_id` -> to kill a process
 
-`echo "Hello, World!" | sudo tee -a /etc/message/message.txt`  -> The tee command reads from the standard input and writes to both standard output and one or more files at the same time. tee is mostly used in combination with other commands through piping. -a means append
+`echo "Hello, World!" | sudo tee -a /etc/message/message.txt`  -> The tee command reads from the standard input and writes to both standard output and one or more files at the same time. tee is mostly used in combination with other commands through piping. -a means append. 
 
 
