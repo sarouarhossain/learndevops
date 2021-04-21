@@ -9,6 +9,7 @@
 ### Pods
 `kubectl get pods` 
 `kubectl get pods -n name_space_name`  
+`kubectl get pods --all-namespaces`  
 `kubectl get pods -n kube-system`  
 `kubectl get pods -n default` 
 `kubectl get pod pod_name -o yaml`    
@@ -21,7 +22,9 @@
 
 `kubectl logs pod_name -n namespace_name`  
 
-`kubectl exec my-configmap-volume-pod -n my-ns -- commands`
+`kubectl exec my-configmap-volume-pod -n my-ns -- commands`  
+
+`kubectl get pod pod_name -n namespace_name -o yaml`
 
 ### ConfigMap
 key:vale configuration data  
@@ -65,6 +68,24 @@ env:
 3 ways they can interact with each other 
 * Shared network (using http://localhost:port)
 * Shared Storage Volume
-* Shared Process Namespace
-  
-  
+* Shared Process Namespace -> `shareProcessNamespace: true` in the pod spec
+
+MultiContainer Pod design pattern:
+* Sidecar Pod
+* Ambassador Pod
+* Adapter Pod
+
+### Pod IP
+`kubectl get pod fruit-service -o=custom-columns=IP:.status.podIP --no-headers`  
+
+### Liveness and Readiness Probes
+* Liveness probe -> indicates whether container is running properly and governs when the cluster will automatically stop or restart the container.  
+* Readiness probe -> indicates whether the container is ready to service requests, and governs whether requests will be forwarded to the Pod.
+
+### Metrics Server
+`cd ~/`  
+`git clone https://github.com/linuxacademy/metrics-server`  
+`kubectl apply -f ~/metrics-server/deploy/1.8+/`  
+`kubectl get--raw /apis/metrics.k8s.io/`  
+
+
