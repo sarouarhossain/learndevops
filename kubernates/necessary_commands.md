@@ -104,11 +104,12 @@ MultiContainer Pod design pattern:
 `kubectl edit deployment nginx-deployment`  
 
 ### Rolling Updates
-`kubectl set image deployment/rolling-deployment ngnix-container=nginx:1.20.0 --record`  
-`kubectl rollout history deployment/rolling-deployment`  
-`kubectl rollout history deployment/rolling-deployment --revision=4`  
-`kubectl rollout undo deployment/rolling-deployment`  
-`kubectl rollout undo deployment/rolling-deployment --to-revision=3`  
+`kubectl set image deployment/deployment_name ngnix-container=nginx:1.20.0 --record`  
+`kubectl rollout history deployment/deployment_name`  
+`kubectl rollout history deployment/deployment_name --revision=4`  
+`kubectl rollout undo deployment/deployment_name`  
+`kubectl rollout undo deployment/deployment_name --to-revision=3`  
+`kubectl rollout status deployment/deployment_name`
 
 maxSurge and maxUnavailable
 
