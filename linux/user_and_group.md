@@ -11,7 +11,8 @@ example:
 `cut -d: -f1 /etc/passwd` -> to see all users
 
 ### adduser
-`adduser username` -> high level utility, not available in all distros. Will create account and home directory, then promt for password.
+`adduser username` -> high level utility, not available in all distros. Will create account and home directory, then promt for password.  
+`sudo adduser <username> sudo`  
 
 ### usermod
 `sudo usermod -c "test1234..." username`  
