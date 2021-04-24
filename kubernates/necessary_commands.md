@@ -23,6 +23,7 @@
 `kubectl describe pod pod_name -n name_space`  
 `kubectl delete pod pod_name -n namespace_name`  
 `kubectl delete pod pod_name --now -n namespace_name`  
+`kubectl delete --all pods`
 
 `kubectl logs pod_name -n namespace_name`  
 
@@ -139,7 +140,9 @@ spec:
 ### Jobs and CronJobs
 `kubectl get jobs`  
 `kubectl get jobs -w`  
-`kubectl get cronjobs`
+`kubectl get cronjobs`  
+`kubectl delete --all jobs`
+`kubectl delete --all cronjobs`
 
 ##### job pi.yml
 ```
@@ -181,4 +184,21 @@ spec:
 
 ```
 
+### Services
+`kubectl get endpoints`
+`kubectl get svc`
 
+4 Types
+* ClusterIp
+* NodePort
+* LoadBalancer
+* ExternalName -> db???
+
+### NetworkPolicy
+`kubectl get networkpolicise`
+`kubectl describe networkpolicy network_policy_name`
+
+Selectors are three types
+* podSelector
+* namespaceSelector
+* ipBlock
