@@ -15,6 +15,7 @@
 `kubectl get pods -n default` 
 `kubectl get pod pod_name -o yaml`   
 `kubectl get pods -w`   
+`kubectl get pods -o wide`  
 
 `kubectl create -f pod_name.yml -n namespace_name`  
 `kubectl apply` -> after changing the pod config yml file.  
@@ -103,6 +104,7 @@ MultiContainer Pod design pattern:
 ### Deployments
 `kubectl get deployments`  
 `kubectl edit deployment nginx-deployment`  
+`kubectl get deployment deployment_name -o yaml`  
 
 ### Rolling Updates
 `kubectl set image deployment/deployment_name ngnix-container=nginx:1.20.0 --record`  
@@ -185,20 +187,34 @@ spec:
 ```
 
 ### Services
-`kubectl get endpoints`
-`kubectl get svc`
+`kubectl get endpoints`  
+`kubectl get ep`  -> same as above
+`kubectl get ep deployment_name`  
+`kubectl get svc`  
+`kubectl exec pod_name -- curl service_name -m 3` -> -m means timeout in second
 
 4 Types
-* ClusterIp
+* ClusterIP
 * NodePort
 * LoadBalancer
 * ExternalName -> db???
 
 ### NetworkPolicy
-`kubectl get networkpolicise`
+`kubectl get networkpolicise`  
 `kubectl describe networkpolicy network_policy_name`
 
 Selectors are three types
 * podSelector
 * namespaceSelector
 * ipBlock
+
+### Volume
+* emptyDir
+* PersistentVolume, PersistentVolumeClaim
+
+`kubectl get pv`  
+`kubectl get pvc`  
+
+### kubectl auto-complete
+`source <(kubectl completion bash)`  
+`echo "source <(kubectl completion bash)" >> ~/.bashrc`  
