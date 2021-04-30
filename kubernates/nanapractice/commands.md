@@ -8,7 +8,9 @@
 `kubectl apply -f FILE_NAME`  
 
 `kubectl get all`
-`kubectl get all | grep mongodb`
+`kubectl get all | grep mongodb`  
+
+`kubectl create namespace namespace_name`
 
 `minikube dashboard`  
 `minikube dashboard --url`  
@@ -16,3 +18,7 @@
 
 ### base64 encoding
 `echo -n 'data' | base64`
+
+### special
+`brew install kubectx`  
+`kubens`  

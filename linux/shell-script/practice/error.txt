@@ -1,0 +1,1 @@
+./spe.sh: line 2: lsa: command not found
