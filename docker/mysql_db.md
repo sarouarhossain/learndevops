@@ -5,13 +5,13 @@ version: '3.7'
 services:
   # MySQL
   db:
-    image: mysql:8.0.17
-    container_name: mysql_host
+    image: mysql:5.7
+    container_name: mysql_demo
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: "${MYSQL_DATABASE}"
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: "demoDB"
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       TZ: 'Asia/Tokyo'
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
@@ -24,15 +24,16 @@ services:
 
   # phpMyAdmin
   phpmyadmin:
-    container_name: test_phpmyadmin
-    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_demo
+    image: phpmyadmin
+    restart: always
     environment:
       - PMA_ARBITRARY=1
-      - PMA_HOSTS=mysql_host
-      - PMA_USER=root
-      - PMA_PASSWORD=root
+      - PMA_HOSTS=mysql_demo
+      - PMA_USER=admin
+      - PMA_PASSWORD=admin
     volumes:
-    - ./php-make/upload.ini:/usr/local/etc/php/php.ini
+      - ./php-make/upload.ini:/usr/local/etc/php/php.ini
     ports:
-      - 8081:80
+      - 8085:80
 ```

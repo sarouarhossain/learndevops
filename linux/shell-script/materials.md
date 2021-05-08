@@ -147,9 +147,6 @@ do
 done
 ```
 
-```
-```
-
 #### until
 ```
 num=1;
@@ -247,4 +244,37 @@ then
 else
 	echo "Strings are not equal. "
 fi
+```
+
+### Arithmetic Operation
+* one way to do it - 
+```
+n1=4
+n2=10
+n4=$(( n1 + n2 ))
+echo $n4
+```  
+* second way to do ot - 
+```
+n1=4
+n2=10
+n4=$(expr $n1 + $n2 )
+n5=$(expr $n1 \* $n2 )
+echo $n4
+echo $n5
+```
+
+* Base Conversion using BC calculator 
+```
+#! /bin/bash
+echo "Enter decimal: "
+read input
+echo "Binary of $input is: "
+echo "obase=2; ibase=10; $input" | bc
+echo "Hexadecimal of $input is: "
+echo "obase=16; ibase=10; $input" | bc
+echo "Octal of $input is: "
+echo "obase=8; ibase=10; $input" | bc
+echo "Base5 of $input is: "
+echo "obase=5; ibase=10; $input" | bc
 ```
