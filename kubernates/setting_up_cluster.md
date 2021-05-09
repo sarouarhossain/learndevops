@@ -21,6 +21,32 @@
 `sudo containerd config default | sudo tee /etc/containerd/config.toml`  
 `sudo systemctl restart containerd`  
 
+* If we don't use containerd, we can use docker as well
+-> Set Up repository:
+`sudo apt-get update`  
+`sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release`
+
+-> add docker's official gpg key
+` curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
+
+-> set up stable repository
+```
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+-> install 
+```
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
 * On all nodes, disable swap.
 `sudo swapoff -a`  
 `sudo sed -i'/ swap / s/^\(.*\)$/#\1/g' /etc/fstab`     
@@ -64,4 +90,4 @@ Get the join command
 `kubeadm tokencreate --print-join-command`  
 
 In Node to join  
-`sudo kubeadm join ..`
+`sudo kubeadm join ..`  
