@@ -117,6 +117,9 @@ Scale a simple deployment:
 `kubectl edit deployment nginx-deployment`  
 `kubectl get deployment deployment_name -o yaml`  
 
+Expose port using a service for a deployment:   
+`kubectl expose deployment deployment_name --port port_number --type NodePort`
+
 ### Rolling Updates
 `kubectl set image deployment/deployment_name ngnix-container=nginx:1.20.0 --record`  
 `kubectl rollout history deployment/deployment_name`  
