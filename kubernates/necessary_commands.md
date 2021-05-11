@@ -102,6 +102,12 @@ MultiContainer Pod design pattern:
 ### Annotations 
 
 ### Deployments
+Create a simple deployment: 
+`kubectl create deployment nginx-dep --image=nginx` 
+
+Scale a simple deployment:
+`kubectl scale deployment nginx-dep --replicas=4`
+
 `kubectl get deployments`  
 `kubectl edit deployment nginx-deployment`  
 `kubectl get deployment deployment_name -o yaml`  
