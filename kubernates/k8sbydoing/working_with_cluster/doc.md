@@ -21,3 +21,8 @@ spec:
   nodeSelector:
     disk: ssd
 ```
+
+port -forward
+```
+kubectl port-forward pod_name port_where_to_forward:port_in_pod
+```

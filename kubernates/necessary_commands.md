@@ -30,7 +30,12 @@
 
 `kubectl exec my-configmap-volume-pod -n my-ns -- commands`  
 
-`kubectl get pod pod_name -n namespace_name -o yaml`
+`kubectl get pod pod_name -n namespace_name -o yaml`  
+
+Port-forward: 
+```
+kubectl port-forward pod_name port_where_to_forward:port_in_pod
+````
 
 ### ConfigMap
 key:vale configuration data  
