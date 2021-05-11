@@ -6,8 +6,13 @@ overlay
 br_netfilter  
 EOF
 ```
-`sudo modprobe overlay`  -> load the upper modules immediately.
-`sudo modprobe br_netfilter`  -> same
+
+```
+sudo modprobe overlay
+sudo modprobe br_netfilter
+```  
+-> load the upper modules immediately.
+
 
 * Set some settings in the OS. These settings are set when server starts up. These are some settings that we need for k8s networking to work as expecting. 
 ```
