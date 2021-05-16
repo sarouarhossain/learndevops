@@ -72,7 +72,7 @@ sudo apt-mark hold docker-ce
 * On all nodes, disable swap.
 ```
 sudo swapoff -a   
-sudo sed -i'/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 ```     
 
 * Install some dependencies
